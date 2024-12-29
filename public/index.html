@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>React App</title>
+  </head>
+  <body>
+    <h2>Adding details</h2>
+    <form class="add">
+      <label for="name">Item Name</label>
+      <input type="text" name="name"><br>
+      <label for="id">Item ID</label>
+      <input type="text" name="id"><br>
+      <label for="deletion">Deletion Reason</label><br>
+      <input type="checkbox" name="deletion" value="Expensive">Expensive<br>
+      <input type="checkbox" name="deletion" value="Less-Quality">Less-Quality<br>
+      <input type="checkbox" name="deletion" value="Cause Damage">Cause Damage<br>
+      <input type="checkbox" name="deletion" value="No warrenty">No warrenty<br><br>
+
+      <input type="submit" value="submit">
+
+    </form>
+    <h2>Delete details</h2>
+    <form class="delete">
+      <label for="id">ID:</label>
+      <input type="text" name="id"><br>
+      <input type="submit" value="submit">
+
+    </form>
+
+    <div class="inventory-item">
+      <ul id="display-item"></ul>
+    </div>
+    
+  </body>
+</html>
